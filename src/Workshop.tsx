@@ -59,4 +59,27 @@ export const isItRainingToday = (a: boolean) => {
 isItRainingToday(true);
 isItRainingToday(false);
 
+// Twitter Activity
+const readTweet = (tweets: string | number): string | number => {
+  return tweets;
+};
+
+readTweet("This is the tweet");
+readTweet(1234);
+
+// Tweets posted last month
+export const tweetsPostedLastMonth = (
+  tweets: (string | number)[] | [number, string, number]
+): number | string => {
+  if (tweets.length > 0) {
+    return tweets.length;
+  } else {
+    return "Silence is golden";
+  }
+};
+
+tweetsPostedLastMonth([]);
+tweetsPostedLastMonth([1, "tweet", 3])
+tweetsPostedLastMonth([1, "tweet", "tweet #2"])
+
 export {};
