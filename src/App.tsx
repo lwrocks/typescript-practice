@@ -1,8 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { haiku, isItRainingToday } from "./Workshop";
 
-function App() {
+const myNewHaiku = haiku("hello", "hello", "it's me")
+
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
